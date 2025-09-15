@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> <!-- Liên kết CSS -->
+</head>
+<body>
+    <div class="form-container">
+        <h1>HTML Forms</h1>
+        <form action="index.html" method="post">
+            <label>Textbox</label>
+            <input type="text" name="txtText" size="5"/> <br/>
+
+            <label>Password</label>
+            <input type="password" name="txtPassword"/> <br/>
+
+            <input type="hidden" name="txtHidden" value=""/> <!-- Hidden input -->
+
+            <label><input type="checkbox" name="chkCheck" value="ON" checked/> Male</label> <br/>
+
+            <label>Status</label><br/>
+            <label><input type="radio" name="rdoStatus" value="Single" checked/> Single</label><br/>
+            <label><input type="radio" name="rdoStatus" value="Married"/> Married</label><br/>
+            <label><input type="radio" name="rdoStatus" value="Divorced"/> Divorced</label><br/>
+
+            <label>ComboBox</label>
+            <select name="txtCombo">
+                <option value="Servlet">JSP and Servlet</option>
+                <option value="EJB">EJB</option>
+            </select><br/>
+
+            <label>Multiple</label>
+            <select name="txtList" multiple size="3">
+                <option value="Servlet" selected>JSP and Servlet</option>
+                <option value="EJB" selected>EJB</option>
+                <option value="Java">Core Java</option>
+            </select><br/>
+
+            <label>TextArea</label>
+            <textarea name="txtArea" rows="4" cols="20">This is a form parameters demo!!!</textarea><br/>
+
+            <div class="buttons">
+                <input type="submit" name="btnSubmit" value="Register"/>
+                <input type="reset" name="btnReset" value="Reset"/>
+                <input type="button" value="Javascript" onclick="alert('Hello!')"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
